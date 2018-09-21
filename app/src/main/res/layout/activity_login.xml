@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".activities.LoginActivity">
+
+    <!--
+        Layout to handle video requirement of api.
+        We are not sharing video in this POC so set its visibility false
+    -->
+    <FrameLayout
+        android:id="@+id/vidyoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"></FrameLayout>
+
+    <!--
+        Scrollview to handle the page scroll to keep controls onscreen when keyboard is open
+    -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_thirty"
+            android:paddingRight="@dimen/dp_thirty">
+
+            <!--
+                Vidyo.io logo
+            -->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_twenty"
+                android:src="@drawable/logo" />
+
+            <EditText
+                android:id="@+id/editTextUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_twenty"
+                android:background="@drawable/round_edittext_background"
+                android:gravity="center"
+                android:hint="@string/hint_username"
+                android:padding="@dimen/dp_ten"
+                android:paddingLeft="@dimen/dp_five"
+                android:textColor="@color/colorInput"
+                android:textColorHint="@color/colorInputHint" />
+
+            <EditText
+                android:id="@+id/editTextMeetingId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_twenty"
+                android:background="@drawable/round_edittext_background"
+                android:gravity="center"
+                android:hint="@string/hint_meeting_id"
+                android:padding="@dimen/dp_ten"
+                android:textColor="@color/colorInput"
+                android:textColorHint="@color/colorInputHint" />
+
+            <Button
+                android:id="@+id/buttonJoinMeeting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_twenty"
+                android:background="@drawable/round_button_background"
+                android:text="@string/button_join_meeting"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

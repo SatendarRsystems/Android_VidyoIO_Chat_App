@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="ThemeWithoutHeader" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    
+    <style name="cardHeaderStyle" >
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/textColorGrey</item>
+    </style>
+    <style name="cardLabelStyle" >
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textColorBlue</item>
+    </style>
+
+    <style name="AppTheme.Toolbar">
+        <!--<item name="toolbarStyle">@style/Widget.Toolbar</item>-->
+        <item name="toolbarNavigationButtonStyle">@style/Widget.Toolbar.Button.Navigation</item>
+    </style>
+
+    <style name="Widget" parent="android:Widget"/>
+    <!--<style name="Widget.Toolbar" parent="Widget.AppCompat.Toolbar">-->
+        <!--<item name="titleTextAppearance">.....</item>-->
+        <!--<item name="subtitleTextAppearance">.....</item>-->
+        <!--<item name="android:minHeight">.....</item>-->
+        <!--<item name="titleMargins">.....</item>-->
+        <!--<item name="maxButtonHeight">.....</item>-->
+        <!--<item name="collapseIcon">.....</item>-->
+        <!--<item name="collapseContentDescription">.....</item>-->
+        <!--<item name="contentInsetStart">.....</item>-->
+        <!--<item name="android:paddingLeft">.....</item>-->
+        <!--<item name="android:paddingRight">.....</item>-->
+    <!--</style>-->
+    <style name="Widget.Toolbar.Button.Navigation" parent="Widget.AppCompat.Toolbar.Button.Navigation">
+        <!--<item name="android:background">.....</item>-->
+        <!--<item name="android:scaleType">.....</item>-->
+        <!-- navigation icon width -->
+        <item name="android:minWidth">32dp</item>
+    </style>
+</resources>

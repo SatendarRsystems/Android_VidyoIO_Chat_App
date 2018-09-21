@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:paddingTop="@dimen/dp_ten">
+
+    <ImageView
+        android:id="@+id/imageViewChatMemberBadge"
+        android:layout_width="@dimen/dp_thirty"
+        android:layout_height="@dimen/dp_thirty"
+        android:layout_marginTop="@dimen/dp_five"
+        android:gravity="center"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp_thirty"
+        android:layout_marginLeft="@dimen/dp_ten"
+        android:layout_toRightOf="@+id/imageViewChatMemberBadge"
+        android:paddingRight="@dimen/dp_ten"
+        android:paddingTop="@dimen/dp_ten"
+        android:paddingBottom="@dimen/dp_ten"
+        android:background="@drawable/chat_box_member"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewSenderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple" />
+
+        <TextView
+            android:id="@+id/textViewMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_five"
+            android:textColor="@color/colorBlack"
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>
+

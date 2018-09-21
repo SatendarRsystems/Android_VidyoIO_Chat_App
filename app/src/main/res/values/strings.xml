@@ -1,0 +1,28 @@
+<resources>
+    <!--APP NAME-->
+    <string name="app_name">Demo</string>
+
+    <!--ACTION BUTTON TEXTS-->
+    <string name="action_logout">Logout</string>
+
+    <!--LABEL TEXTS-->
+    <string name="label_meetingID">Meeting ID</string>
+    <string name="label_username">Username</string>
+    <string name="label_totalMember">Members</string>
+    <string name="label_chat_message">Type a message</string>
+
+    <!--BUTTON TEXTS-->
+    <string name="button_join_meeting">Join Meeting</string>
+
+    <!--HINT MESSAGES-->
+    <string name="hint_username">Enter Username</string>
+    <string name="hint_meeting_id">Enter Meeting ID</string>
+
+    <!--ERROR MESSAGES-->
+    <string name="error_username">Please enter username</string>
+    <string name="error_username_space">No space allowed in username</string>
+    <string name="error_meeting_id">Please enter meeting id</string>
+    <string name="error_no_internet_connection">Please check your internet connection</string>
+    <string name="error_no_token">Token not received</string>
+    <string name="error_invalid_token_format">Token not is in valid format</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_video_chat"
+        android:title="@string/action_logout"
+        android:icon="@mipmap/ic_videocam_white"
+        app:showAsAction="always"></item>
+    <item
+        android:id="@+id/action_logout"
+        android:title="@string/action_logout"
+        android:icon="@mipmap/ic_logout_white"
+        app:showAsAction="always"></item>
+</menu>
