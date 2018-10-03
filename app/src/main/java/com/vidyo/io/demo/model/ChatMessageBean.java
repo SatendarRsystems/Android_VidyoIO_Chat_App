@@ -10,13 +10,13 @@ import java.io.Serializable;
  * @author RSI
  * @date 20.08.2018
  */
-public class ChatMessageBean implements Serializable {
+public class ChatMessageBean implements Serializable{
 
     public static final int TYPE_SELF_MESSAGE = 0;
     public static final int TYPE_OTHER_MESSAGE = 1;
     private boolean isSelf;
     private String username;
-    private static transient ChatMessage chatMessage;
+    private transient ChatMessage chatMessage;
 
     public static int getTypeSelfMessage() {
         return TYPE_SELF_MESSAGE;
